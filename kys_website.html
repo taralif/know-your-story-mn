@@ -238,6 +238,24 @@ nav{
 .partner-pill:hover{border-color:var(--blue);color:var(--white)}
 
 /* CTA */
+.logo-tease{background:var(--card);border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:28px 48px;text-align:center}
+.logo-tease p{font-size:14px;color:var(--muted);max-width:60ch;margin:0 auto}
+.logo-tease strong{color:var(--gold)}
+.teen-board{padding:100px 48px;max-width:1100px;margin:0 auto}
+.teen-board-inner{background:var(--card);border-radius:12px;padding:56px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.teen-board-label{font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.teen-board-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,4vw,48px);color:var(--white);line-height:1;margin-bottom:16px}
+.teen-board-body{font-size:15px;line-height:1.8;color:var(--muted)}
+.teen-board-cta{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.teen-board-cta span{font-size:12px;color:var(--muted)}
+.faq{background:var(--dark2);padding:100px 48px}
+.faq-inner{max-width:900px;margin:0 auto}
+.faq-label{font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+.faq-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,64px);color:var(--white);line-height:1;margin-bottom:48px}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.08);padding:24px 0}
+.faq-item:first-of-type{border-top:1px solid rgba(255,255,255,0.08)}
+.faq-q{font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px}
+.faq-a{font-size:14px;line-height:1.7;color:var(--muted)}
 .cta{
   padding:120px 48px;text-align:center;
   background:linear-gradient(to bottom,var(--ink),var(--dark2));
@@ -289,7 +307,8 @@ footer{
   .moment,.community-inner{grid-template-columns:1fr;gap:40px}
   .moment-image{display:none}
   .community-right{display:none}
-  .how,.outcomes,.community,.team,.partners,.cta{padding-left:24px;padding-right:24px}
+  .how,.outcomes,.community,.team,.partners,.cta,.teen-board,.faq{padding-left:24px;padding-right:24px}
+  .teen-board-inner{grid-template-columns:1fr}
   footer{padding:32px 24px;flex-direction:column;align-items:flex-start}
   .footer-right{text-align:left}
   .session:first-child,.session:last-child{border-radius:0}
@@ -311,6 +330,7 @@ footer{
     <a href="#about">About</a>
     <a href="#program">Program</a>
     <a href="#team">Team</a>
+    <a href="#faq">FAQ</a>
     <a href="#join" class="nav-cta">Join the Effort</a>
   </div>
 </nav>
@@ -352,40 +372,24 @@ footer{
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-inner" id="ticker-inner">
-    <span class="ticker-item">StandWithUs</span>
-    <span class="ticker-item">TC Jewfolk</span>
-    <span class="ticker-item">Minnesota JCC</span>
-    <span class="ticker-item">JCRC</span>
-    <span class="ticker-item">Herzl Camp</span>
-    <span class="ticker-item">Smith Day School</span>
-    <span class="ticker-item">JSU</span>
-    <span class="ticker-item">BBYO</span>
-    <span class="ticker-item">USY / Beth El</span>
-    <span class="ticker-item">U of M Hillel</span>
-    <span class="ticker-item">Minneapolis Federation</span>
-    <span class="ticker-item">St. Paul Federation</span>
-    <span class="ticker-item">MN Rabbinic Association</span>
-    <span class="ticker-item">Temple Israel</span>
-    <span class="ticker-item">Adath Jeshurun</span>
-    <span class="ticker-item">Darchei Noam</span>
-    <span class="ticker-item">Bet Shalom</span>
-    <span class="ticker-item">StandWithUs</span>
-    <span class="ticker-item">TC Jewfolk</span>
-    <span class="ticker-item">Minnesota JCC</span>
-    <span class="ticker-item">JCRC</span>
-    <span class="ticker-item">Herzl Camp</span>
-    <span class="ticker-item">Smith Day School</span>
-    <span class="ticker-item">JSU</span>
-    <span class="ticker-item">BBYO</span>
-    <span class="ticker-item">USY / Beth El</span>
-    <span class="ticker-item">U of M Hillel</span>
-    <span class="ticker-item">Minneapolis Federation</span>
-    <span class="ticker-item">St. Paul Federation</span>
-    <span class="ticker-item">MN Rabbinic Association</span>
-    <span class="ticker-item">Temple Israel</span>
-    <span class="ticker-item">Adath Jeshurun</span>
-    <span class="ticker-item">Darchei Noam</span>
-    <span class="ticker-item">Bet Shalom</span>
+    <span class="ticker-item">Belonging</span>
+    <span class="ticker-item">Knowledge</span>
+    <span class="ticker-item">Confidence</span>
+    <span class="ticker-item">Community</span>
+    <span class="ticker-item">Pride</span>
+    <span class="ticker-item">Nuance</span>
+    <span class="ticker-item">Voice</span>
+    <span class="ticker-item">Legacy</span>
+    <span class="ticker-item">Connection</span>
+    <span class="ticker-item">Belonging</span>
+    <span class="ticker-item">Knowledge</span>
+    <span class="ticker-item">Confidence</span>
+    <span class="ticker-item">Community</span>
+    <span class="ticker-item">Pride</span>
+    <span class="ticker-item">Nuance</span>
+    <span class="ticker-item">Voice</span>
+    <span class="ticker-item">Legacy</span>
+    <span class="ticker-item">Connection</span>
   </div>
 </div>
 
@@ -395,10 +399,11 @@ footer{
     <p class="moment-label">The Moment We're In</p>
     <h2 class="moment-headline">Jewish teens are being asked to defend who they are.</h2>
     <p class="moment-body">In classrooms, online, and among peers, they encounter distorted history, denial of Jewish peoplehood, and antisemitism disguised as political discourse. Even teens active in Jewish life may lack a clear understanding of Jewish history and Israel's centrality to Jewish identity.</p>
-    <p class="moment-body">This program supplements — not replaces — existing Jewish educational opportunities. And it specifically reaches teens who aren't currently engaged at all.</p>
+    <p class="moment-body">This program supplements — not replaces — existing Jewish educational opportunities. It's built so every teen — whether they've grown up deeply immersed in Jewish life or are just starting to explore it — walks in and feels like it's for them.</p>
+    <!-- ATTRIBUTION PENDING: awaiting confirmation from Haviv Retig Gur's team before this goes live -->
     <blockquote class="moment-quote">
       "We cannot expect young people to stand confidently in their story if we have not first helped them know it."
-      <cite>— Jewish historian and speaker, post-October 7</cite>
+      <cite>— Haviv Retig Gur, Senior Analyst, The Times of Israel</cite>
     </blockquote>
   </div>
   <div class="moment-image">
@@ -411,41 +416,30 @@ footer{
   <div class="how-inner">
     <div class="how-header">
       <p class="how-label">The Program</p>
-      <h2 class="how-headline">Four sessions. One community.<br/>A story they can claim.</h2>
-      <p class="how-sub">Dynamic, immersive gatherings at the Minnesota JCC — designed by local educators, powered by StandWithUs, built for every Jewish teen in the Twin Cities.</p>
+      <h2 class="how-headline">Three sessions. One community.<br/>A story they can claim.</h2>
+      <p class="how-sub">Dynamic, immersive gatherings at The Barry Family Campus — designed in partnership with local educators, powered by StandWithUs, built for every Jewish teen in the Twin Cities.</p>
     </div>
     <div class="sessions">
       <div class="session">
         <div class="session-bar"></div>
         <div class="session-num">01</div>
-        <p class="session-date">October 2026 — Launch</p>
-        <p class="session-title">Israel 101</p>
-        <p class="session-body">The historical and ideological roots of Zionism, the significance of Israel as a Jewish homeland, and how Jewish holidays, prayers, and practices are tied to Eretz Yisrael. Teens explore how Jews are indigenous to the land — and why Zionism is the most successful Land Back movement in human history.</p>
+        <p class="session-date">December 2026 — Launch</p>
+        <p class="session-title">Antisemitism Through the Ages</p>
+        <p class="session-body">Teens trace the history of antisemitism from the ancient world to today, tracking how longstanding myths and stereotypes have adapted across eras — building the tools to recognize antisemitism in all its forms and respond with confidence.</p>
       </div>
       <div class="session">
         <div class="session-bar"></div>
         <div class="session-num">02</div>
-        <p class="session-date">Winter 2027 — Session 2</p>
-        <p class="session-title">Combating Antisemitism</p>
-        <p class="session-body">The many forms of antisemitism — historical and contemporary — and the tools to identify and respond to it in daily life and on campus. Includes a conversation with Hillel staff about Jewish life at university and a tour of Minnesota Hillel.</p>
+        <p class="session-date">February 2027 — Session 2</p>
+        <p class="session-title">Tracing Jewish Identity Through Immigration</p>
+        <p class="session-body">Every Jewish family has a unique story. Through guided discussion and personal reflection, teens explore how migration, identity, and resilience have shaped Jewish communities worldwide — and how their own family's story connects to a shared heritage.</p>
       </div>
       <div class="session">
         <div class="session-bar"></div>
         <div class="session-num">03</div>
-        <p class="session-date">Spring 2027 — Session 3</p>
-        <p class="session-title">Navigating Difficult Conversations</p>
-        <p class="session-body">An exploration of dual narratives — the Jewish and Palestinian stories — with empathy and honesty. Teens learn to present the Zionist story with pride while understanding competing perspectives, and to navigate a world where two narratives will always coexist.</p>
-      </div>
-    </div>
-    <div class="capstone">
-      <div>
-        <p class="capstone-label">Session 04 · Spring 2027 — Capstone</p>
-        <p class="capstone-title">Gallery & Celebration</p>
-        <p class="capstone-body">Teens present their capstone projects in a gallery walk open to families and the wider community — reflecting on their journey and demonstrating what knowing your story makes possible.</p>
-      </div>
-      <div class="capstone-badge">
-        <p class="capstone-badge-num">Spring<br/>2027</p>
-        <p class="capstone-badge-label">Capstone Event</p>
+        <p class="session-date">April 2027 — Session 3</p>
+        <p class="session-title">Concepts and Misconceptions</p>
+        <p class="session-body">The Israeli-Palestinian conflict is complex and often clouded by misinformation. Teens work through common misconceptions and separate fact from fiction, building the knowledge and confidence to navigate conversations about Israel with accuracy, nuance, and critical thinking.</p>
       </div>
     </div>
   </div>
@@ -454,7 +448,7 @@ footer{
 <!-- OUTCOMES -->
 <section class="outcomes">
   <p class="outcomes-label">What Teens Take With Them</p>
-  <h2 class="outcomes-headline">The goal is not to hand them<br/>talking points.</h2>
+  <h2 class="outcomes-headline">The goal is not to hand them<br/>talking points — it's to help them think for themselves.</h2>
   <div class="outcomes-grid">
     <div class="outcome">
       <p class="outcome-title">Stronger Knowledge</p>
@@ -462,7 +456,7 @@ footer{
     </div>
     <div class="outcome">
       <p class="outcome-title">Sense of Belonging</p>
-      <p class="outcome-body">Real friendships across synagogues, schools, and backgrounds — community as the product.</p>
+      <p class="outcome-body">Relationship building across synagogues, schools, and backgrounds — community as the product.</p>
     </div>
     <div class="outcome">
       <p class="outcome-title">Language & Confidence</p>
@@ -475,17 +469,45 @@ footer{
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="faq-inner">
+    <p class="faq-label">Questions</p>
+    <h2 class="faq-headline">A Few Things<br/>You Might Be Wondering</h2>
+    <div class="faq-item">
+      <p class="faq-q">Who is Know Your Story for?</p>
+      <p class="faq-a">Every Jewish teen in the Twin Cities, grades 8–12 — regardless of denomination, affiliation, or how connected they currently feel to Jewish life. We've made sure to build it so that all teens feel welcomed, comfortable, and confident being themselves at Know Your Story.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">What's the time commitment?</p>
+      <p class="faq-a">Three 90-minute sessions across the 2026–2027 school year — plus time for pizza and a giveaway drawing!</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Does my teen need a Jewish education background?</p>
+      <p class="faq-a">No. Sessions are designed to meet teens where they are, whether they've had years of Jewish schooling or almost none.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Is there a cost?</p>
+      <p class="faq-a">There's a nominal cost to help cover food and materials, with financial assistance available. More details closer to launch.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">How do I get my teen involved?</p>
+      <p class="faq-a">Reach out to knowyourstorymn@gmail.com or use the Get Involved button below — we'll follow up with registration details.</p>
+    </div>
+  </div>
+</section>
+
 <!-- COMMUNITY -->
 <section class="community">
   <div class="community-inner">
     <div>
       <p class="community-label">A Community Effort</p>
       <h2 class="community-headline">This only works if we build it together.</h2>
-      <p class="community-body">Know Your Story is led by local Jewish educators, professionals, and volunteers — built in partnership with community organizations across every movement and denomination.</p>
-      <p class="community-body"><strong>The goal is not to create something new on top of what already exists.</strong> It's to do together what none of us can do alone: reach every Jewish teen in the Twin Cities and give them what they need before they leave for college.</p>
+      <p class="community-body">Know Your Story is innovated by local Jewish educators, professionals, and volunteers, and brought to life in partnership with community organizations across every movement and denomination.</p>
+      <p class="community-body"><strong>The goal is not to duplicate or recreate what already exists.</strong> It's to do together what none of us can do alone: reach every Jewish teen in the Twin Cities and give them what they need before they leave for college.</p>
       <div class="stats">
         <div class="stat"><p class="stat-num">25–40</p><p class="stat-label">Teens in Year 1</p></div>
-        <div class="stat"><p class="stat-num">4</p><p class="stat-label">Sessions per year</p></div>
+        <div class="stat"><p class="stat-num">3</p><p class="stat-label">Sessions per year</p></div>
         <div class="stat"><p class="stat-num">Gr. 8–12</p><p class="stat-label">All affiliations welcome</p></div>
         <div class="stat"><p class="stat-num">$50K</p><p class="stat-label">Launch budget goal</p></div>
       </div>
@@ -513,16 +535,25 @@ footer{
       <p class="team-name">Tara Baumgarten</p>
       <p class="team-role">Program Manager</p>
     </div>
-    <div class="team-card">
-      <div class="team-initial" style="background:#6B3A7A">TF</div>
-      <p class="team-name">Tamar Fenton</p>
-      <p class="team-role">Community Liaison</p>
-    </div>
-
     <div class="team-card" style="border-style:dashed;border-color:rgba(26,107,255,0.3)">
       <div class="team-initial" style="background:transparent;border:2px dashed var(--blue);color:var(--blue)">+</div>
       <p class="team-name" style="color:var(--muted)">You?</p>
       <p class="team-role">Join the effort</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEEN BOARD -->
+<section class="teen-board">
+  <div class="teen-board-inner">
+    <div>
+      <p class="teen-board-label">Teen Leadership</p>
+      <h2 class="teen-board-headline">Join the Teen Board.</h2>
+      <p class="teen-board-body">A small group of teens will help shape Know Your Story from the inside — weighing in on session content, helping plan how we mark the end of the year, and recruiting peers. This is a real seat at the table, not a title.</p>
+    </div>
+    <div class="teen-board-cta">
+      <a href="mailto:knowyourstorymn@gmail.com?subject=Teen%20Board%20Application" class="btn-primary">Apply for the Teen Board</a>
+      <span>Open to teens grades 8–12. Applications reviewed on a rolling basis.</span>
     </div>
   </div>
 </section>
@@ -555,9 +586,14 @@ footer{
   </div>
 </section>
 
+<!-- LOGO CONTEST TEASE -->
+<section class="logo-tease">
+  <p><strong>Coming soon:</strong> a teen logo design contest — Know Your Story's visual identity, designed by the teens it's for. Details dropping ahead of launch.</p>
+</section>
+
 <!-- CTA -->
 <section id="join" class="cta">
-  <p class="cta-eyebrow">October 25, 2026</p>
+  <p class="cta-eyebrow">December 6, 2026</p>
   <h2 class="cta-headline">Join<br/>the effort.</h2>
   <p class="cta-sub">Whether you're a parent, educator, youth director, clergy, or a teen who wants in early — there's a place for you in this.</p>
   <div class="cta-buttons">
@@ -579,9 +615,9 @@ footer{
 </footer>
 
 <script>
-// Countdown to October 25, 2026
+// Countdown to December 6, 2026
 function updateCountdown(){
-  const target = new Date('2026-10-25T10:00:00');
+  const target = new Date('2026-12-06T10:00:00');
   const now = new Date();
   const diff = target - now;
   if(diff <= 0){
