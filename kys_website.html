@@ -161,9 +161,17 @@ nav{
 .sessions{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;margin-top:48px}
 .session{
   background:var(--card);padding:36px 28px;position:relative;
-  transition:background 0.2s;
+  transition:background 0.2s;display:block;text-decoration:none;
 }
 .session:hover{background:#1f1f35}
+.session:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.session-reg{
+  font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--blue);margin-top:18px;transition:color 0.2s;
+}
+.session-reg span{display:inline-block;transition:transform 0.2s}
+.session:hover .session-reg{color:var(--gold)}
+.session:hover .session-reg span{transform:translateX(4px)}
 .session:first-child{border-radius:8px 0 0 8px}
 .session:last-child{border-radius:0 8px 8px 0}
 .session-num{font-family:'Bebas Neue',sans-serif;font-size:64px;color:rgba(26,107,255,0.15);line-height:1;margin-bottom:8px}
@@ -550,30 +558,33 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
       <p class="how-sub">Dynamic, immersive gatherings at The Barry Family Campus — designed in partnership with local educators, powered by StandWithUs, built for every Jewish teen in the Twin Cities.</p>
     </div>
     <div class="sessions">
-      <div class="session">
+      <a class="session" href="https://luma.com/b67rvc66" target="_blank" rel="noopener">
         <div class="session-bar"></div>
         <div class="session-num">01</div>
-        <p class="session-date">December 2026 — Launch</p>
+        <p class="session-date">December 6, 2026 — Launch</p>
         <p class="session-title">The Timeline</p>
         <p class="session-curric">Antisemitism Through the Ages</p>
         <p class="session-body">Teens trace the history of antisemitism from the ancient world to today, tracking how longstanding myths and stereotypes have adapted across eras — building the tools to recognize antisemitism in all its forms and respond with confidence.</p>
-      </div>
-      <div class="session">
+        <p class="session-reg">Register on Luma <span>&rarr;</span></p>
+      </a>
+      <a class="session" href="https://luma.com/1luqmy9b" target="_blank" rel="noopener">
         <div class="session-bar"></div>
         <div class="session-num">02</div>
-        <p class="session-date">February 2027 — Session 2</p>
+        <p class="session-date">February 7, 2027 — Session 2</p>
         <p class="session-title">Origin Story</p>
         <p class="session-curric">Tracing Jewish Identity Through Immigration</p>
         <p class="session-body">Every Jewish family has a unique story. Through guided discussion and personal reflection, teens explore how migration, identity, and resilience have shaped Jewish communities worldwide — and how their own family's story connects to a shared heritage.</p>
-      </div>
-      <div class="session">
+        <p class="session-reg">Register on Luma <span>&rarr;</span></p>
+      </a>
+      <a class="session" href="https://luma.com/npxsfqmr" target="_blank" rel="noopener">
         <div class="session-bar"></div>
         <div class="session-num">03</div>
-        <p class="session-date">April 2027 — Session 3</p>
+        <p class="session-date">April 18, 2027 — Session 3</p>
         <p class="session-title">The Group Chat</p>
         <p class="session-curric">Concepts and Misconceptions</p>
         <p class="session-body">The Israeli-Palestinian conflict is complex and often clouded by misinformation. Teens work through common misconceptions and separate fact from fiction, building the knowledge and confidence to navigate conversations about Israel with accuracy, nuance, and critical thinking.</p>
-      </div>
+        <p class="session-reg">Register on Luma <span>&rarr;</span></p>
+      </a>
     </div>
   </div>
 </section>
@@ -685,7 +696,7 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
       <p class="teen-board-body">A small group of teens will help shape Know Your Story from the inside — weighing in on session content, helping plan how we mark the end of the year, and recruiting peers. This is a real seat at the table, not a title.</p>
     </div>
     <div class="teen-board-cta">
-      <a href="mailto:knowyourstorymn@gmail.com?subject=Teen%20Board%20Application" class="btn-primary">Apply for the Teen Board</a>
+      <a href="teen-board.html" class="btn-primary">Apply for the Teen Board</a>
       <span>Open to teens grades 8–12. Applications reviewed on a rolling basis.</span>
     </div>
   </div>
