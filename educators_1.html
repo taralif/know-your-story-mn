@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead a group — Know Your Story</title>
+<meta name="description" content="Know Your Story is hiring group facilitators and college-age mentors for three Sunday sessions with Twin Cities Jewish teens, 2026–27. Paid. Apply by September 28.">
+<!-- DRAFT ONLY — delete this line before going live so search engines can find the page. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B0D16;
+    --navy-soft:#151827;
+    --blue:#1F6BFF;
+    --gold:#D2A63F;
+    --gold-dark:#A87C1F;
+    --paper:#FBFAF7;
+    --ink:#1A1D2B;
+    --ink-mid:#4C5164;
+    --rule:rgba(11,13,22,.14);
+    --rule-dark:rgba(255,255,255,.16);
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:themed;max-width:64rem;margin:0 auto;padding:0 1.5rem}
+  a{color:var(--blue)}
+
+  h1,h2,h3{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.02;margin:0}
+  p{margin:0 0 1rem}
+  p:last-child{margin-bottom:0}
+
+  /* DRAFT BANNER — delete this block and the matching <div class="draft"> before going live. */
+  .draft{
+    background:var(--gold);color:var(--navy);
+    font-size:.88rem;font-weight:600;line-height:1.45;
+    padding:.7rem 1.5rem;text-align:center;
+  }
+  .draft span{font-weight:400}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--navy);color:#fff;padding:4.5rem 0 3.5rem}
+  .hero .kicker{
+    font-family:Caveat,cursive;font-size:1.45rem;color:var(--gold);
+    margin:0 0 .9rem;line-height:1.2;
+  }
+  .hero h1{font-size:clamp(2.6rem,8vw,5rem);color:#fff;max-width:15ch}
+  .hero h1 em{font-style:normal;color:var(--blue)}
+  .hero .lede{
+    margin-top:1.6rem;max-width:52ch;font-size:1.15rem;color:rgba(255,255,255,.82);
+  }
+  .hero .lede strong{color:#fff;font-weight:600}
+
+  .facts{
+    margin-top:2.6rem;padding-top:1.5rem;border-top:1px solid var(--rule-dark);
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.4rem 1.75rem;
+  }
+  .facts div{font-size:.95rem;color:rgba(255,255,255,.62);line-height:1.45}
+  .facts b{
+    display:block;font-family:Anton,sans-serif;font-weight:400;
+    font-size:1.6rem;color:var(--gold);letter-spacing:.01em;margin-bottom:.15rem;
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:3.75rem 0}
+  section + section{border-top:1px solid var(--rule)}
+  h2{font-size:clamp(1.75rem,4vw,2.5rem);margin-bottom:1.25rem;max-width:22ch}
+  .intro{max-width:60ch;color:var(--ink-mid);margin-bottom:2.25rem}
+
+  /* ---------- roles ---------- */
+  .roles{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+  .role{border-top:4px solid var(--navy);padding-top:1.25rem}
+  .role:nth-child(2){border-top-color:var(--gold-dark)}
+  .role h3{font-size:1.6rem;margin-bottom:.35rem}
+  .role .pay{
+    font-family:Inter,sans-serif;font-weight:700;font-size:1rem;
+    color:var(--gold-dark);margin-bottom:1rem;
+  }
+  .role .who{color:var(--ink-mid);font-size:.97rem;margin-bottom:1rem}
+  .role ul{margin:0;padding-left:1.1rem}
+  .role li{margin-bottom:.55rem}
+  .role li::marker{color:var(--blue)}
+
+  /* ---------- looking for ---------- */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;max-width:56rem}
+  .cols h3{font-family:Inter,sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:.85rem}
+  .cols ul{margin:0;padding-left:1.1rem;color:var(--ink-mid)}
+  .cols li{margin-bottom:.6rem}
+  .cols .yes li::marker{color:var(--blue)}
+  .cols .no li::marker{color:var(--ink-mid)}
+  .note{
+    margin-top:2rem;padding:1.25rem 1.4rem;background:#fff;
+    border-left:4px solid var(--blue);max-width:60ch;font-size:.97rem;
+  }
+
+  /* ---------- schedule ---------- */
+  .sched{border-top:1px solid var(--rule)}
+  .row{
+    display:grid;grid-template-columns:9.5rem 1fr auto;gap:1.5rem;align-items:baseline;
+    padding:1.15rem 0;border-bottom:1px solid var(--rule);
+  }
+  .row .when{font-family:Anton,sans-serif;font-size:1.1rem;letter-spacing:.01em}
+  .row .what strong{display:block;font-weight:600;margin-bottom:.15rem}
+  .row .what span{color:var(--ink-mid);font-size:.94rem}
+  .row .where{color:var(--ink-mid);font-size:.9rem;text-align:right;white-space:nowrap}
+  .row.training{background:rgba(31,107,255,.045)}
+  .row.training .when{color:var(--blue)}
+
+  /* ---------- form ---------- */
+  .form-sec{background:var(--navy-soft);color:#fff}
+  .form-sec h2{color:#fff}
+  .form-sec .intro{color:rgba(255,255,255,.7)}
+  form{max-width:44rem}
+  .field{margin-bottom:1.5rem}
+  label{display:block;font-weight:600;font-size:.97rem;margin-bottom:.45rem}
+  label .hint{display:block;font-weight:400;font-size:.88rem;color:rgba(255,255,255,.55);margin-top:.2rem}
+  input,textarea,select{
+    width:100%;padding:.7rem .85rem;font:inherit;font-size:1rem;color:#fff;
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-radius:2px;
+  }
+  textarea{min-height:5.5rem;resize:vertical}
+  select option{color:#111}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--gold);outline-offset:1px;background:rgba(255,255,255,.12)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+  button{
+    font-family:Anton,sans-serif;font-size:1.15rem;letter-spacing:.03em;
+    background:var(--blue);color:#fff;border:0;border-radius:2px;
+    padding:.85rem 2.25rem;cursor:pointer;
+  }
+  button:hover{background:#1557d6}
+  button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .deadline{
+    font-family:Caveat,cursive;font-size:1.35rem;color:var(--gold);margin-top:1rem;
+  }
+  #status{margin-top:1rem;font-size:.95rem;color:var(--gold);display:none}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--navy);color:rgba(255,255,255,.5);padding:2.5rem 0;font-size:.9rem}
+  footer a{color:rgba(255,255,255,.75)}
+
+  @media (max-width:720px){
+    body{font-size:16px}
+    .hero{padding:3.25rem 0 2.5rem}
+    .roles,.cols,.two{grid-template-columns:1fr;gap:2rem}
+    .row{grid-template-columns:1fr;gap:.3rem}
+    .row .where{text-align:left}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- DRAFT BANNER — delete this div and the .draft CSS block before going live. -->
+<div class="draft">Draft for committee review <span>&mdash; dates and details still being confirmed. Please don't share outside the committee yet.</span></div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Twin Cities Jewish teens, 2026&ndash;27</p>
+    <h1>Help teens talk about the hard <em>stuff</em>.</h1>
+    <p class="lede">Know Your Story brings 8th&ndash;12th graders together for three Sundays of learning with <strong>StandWithUs</strong>, nationally recognized leaders in teen Jewish education and identity building. After each session, teens break into grade-level groups to actually talk about the material. We're hiring the people who will lead those smaller group conversations.</p>
+    <div class="facts">
+      <div><b>3</b>Sunday sessions</div>
+      <div><b>2</b>paid trainings</div>
+      <div><b>4&thinsp;+&thinsp;4</b>facilitator and mentor spots</div>
+      <div><b>$1,000 / $550</b>facilitating / mentoring</div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Two roles</h2>
+    <p class="intro">Both work with the same teens on the same three Sundays. They do different jobs in the room.</p>
+    <div class="roles">
+      <div class="role">
+        <h3>Group Facilitator</h3>
+        <p class="pay">$1,000 for the project</p>
+        <p class="who">For experienced Jewish educators. Four spots, covering grades 8&ndash;9, 10&ndash;11, and 12.</p>
+        <ul>
+          <li>Lead a grade-level discussion group for 30&ndash;45 minutes at each of the three sessions</li>
+          <li>Attend both trainings with StandWithUs educators</li>
+          <li>Help teens process what they just learned &mdash; not deliver a lesson</li>
+          <li>Hold the room when a conversation gets uncomfortable, which it will</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>College-Age Mentor</h3>
+        <p class="pay">$550 for the project</p>
+        <p class="who">For college students and young adults. Four spots.</p>
+        <ul>
+          <li>Join the breakout groups as a near-peer, not a second teacher</li>
+          <li>Attend both trainings</li>
+          <li>Bring energy, ask the question a teen is afraid to ask</li>
+          <li>Be a young Jewish leader a teen can picture themselves becoming</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What we're looking for</h2>
+    <p class="intro">We're not asking for a resume. We're asking how you'll make this time count &mdash; how you'll help teens feel confident asking their questions, sharing their thoughts, and opening their perspectives.</p>
+    <div class="cols">
+      <div class="yes">
+        <h3>Matters a lot</h3>
+        <ul>
+          <li>You've led a group of teens before &mdash; camp, youth group, Hillel, classroom, anywhere</li>
+          <li>You can sit with a hard question instead of rushing to answer it</li>
+          <li>You're clear about your own Jewish and Zionist identity, and comfortable when a teen isn't yet</li>
+          <li>Teens like being around you</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Matters less</h3>
+        <ul>
+          <li>Years of experience</li>
+          <li>Formal teaching credentials</li>
+          <li>Deep expertise in Israeli history &mdash; StandWithUs handles the content</li>
+          <li>Having every answer</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">This is not a teaching job. StandWithUs runs the learning portion of each session. Your job starts when the teens break into groups and have to figure out what they actually think.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The five dates</h2>
+    <p class="intro">All five are required. Trainings are on Zoom in the evening; sessions are Sunday afternoons in person.</p>
+    <div class="sched">
+      <div class="row training">
+        <span class="when">Tue, Oct 13</span>
+        <span class="what"><strong>Training one</strong><span>With StandWithUs educators</span></span>
+        <span class="where">7:00pm &middot; Zoom &middot; 90 min</span>
+      </div>
+      <div class="row training">
+        <span class="when">Tue, Nov 10</span>
+        <span class="what"><strong>Training two</strong><span>With StandWithUs educators</span></span>
+        <span class="where">7:00pm &middot; Zoom &middot; 90 min</span>
+      </div>
+      <div class="row">
+        <span class="when">Sun, Dec 6</span>
+        <span class="what"><strong>Origin Story</strong><span>Jewish identity through immigration</span></span>
+        <span class="where">1:00&ndash;3:00pm &middot; Barry Family Campus</span>
+      </div>
+      <div class="row">
+        <span class="when">Sun, Feb 7</span>
+        <span class="what"><strong>The Timeline</strong><span>Antisemitism through the ages</span></span>
+        <span class="where">12:00&ndash;2:00pm &middot; Barry Family Campus</span>
+      </div>
+      <div class="row">
+        <span class="when">Sun, Apr 18</span>
+        <span class="what"><strong>The Group Chat</strong><span>Concepts and misconceptions about Israel</span></span>
+        <span class="where">12:00&ndash;2:00pm &middot; Barry Family Campus</span>
+      </div>
+    </div>
+    <p class="note">Paid as an independent contractor through TC Jewfolk, our fiscal sponsor. Half after the December session, half after April.</p>
+  </div>
+</section>
+
+<section class="form-sec">
+  <div class="wrap">
+    <h2>Tell us you're interested</h2>
+    <p class="intro">No resume, no cover letter. Answer these in a few sentences each. If it looks like a fit, a couple of us will set up a 20-minute conversation.</p>
+
+    <form id="apply" novalidate>
+      <div class="two">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="role">Which role</label>
+          <select id="role" name="role">
+            <option value="Group Facilitator">Group Facilitator</option>
+            <option value="College-Age Mentor">College-Age Mentor</option>
+            <option value="Either">Either &mdash; tell me which fits</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="q1">Where have you led a group of teens, and what was it?
+          <span class="hint">Camp, youth group, Hillel, classroom, a one-time thing. All of it counts.</span>
+        </label>
+        <textarea id="q1" name="q1"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="q2">A teen in your group says: "I don't know how I feel about Israel, and I'm scared to say that out loud." What do you say next?
+          <span class="hint">There's no right answer. We want to hear how you think.</span>
+        </label>
+        <textarea id="q2" name="q2"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="q3">Can you make all five dates?
+          <span class="hint">If there's a conflict, say so &mdash; it won't rule you out on its own.</span>
+        </label>
+        <textarea id="q3" name="q3"></textarea>
+      </div>
+
+      <button type="submit">Send it</button>
+      <p class="deadline">Please reply by Monday, September 28</p>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Know Your Story &mdash; a community effort of Twin Cities Jewish educators, professionals, and volunteers. Fiscal sponsor: TC Jewfolk. Curriculum partner: StandWithUs.</p>
+    <p>Questions? <a href="mailto:knowyourstorymn@gmail.com">knowyourstorymn@gmail.com</a> &nbsp;&middot;&nbsp; <a href="/">knowyourstorymn.org</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('apply');
+  var status = document.getElementById('status');
+
+  // TODO: replace with the live Formspree/Supabase endpoint, then delete the mailto fallback.
+  var ENDPOINT = '';
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    var get = function(id){ return (document.getElementById(id).value || '').trim(); };
+    var data = {
+      name:  get('name'),
+      email: get('email'),
+      phone: get('phone'),
+      role:  get('role'),
+      q1:    get('q1'),
+      q2:    get('q2'),
+      q3:    get('q3')
+    };
+
+    if(!data.name || !data.email){
+      status.style.display = 'block';
+      status.textContent = 'Please add your name and email so we can reach you.';
+      document.getElementById(data.name ? 'email' : 'name').focus();
+      return;
+    }
+
+    var body =
+      'Name: '  + data.name  + '\n' +
+      'Email: ' + data.email + '\n' +
+      'Phone: ' + data.phone + '\n' +
+      'Role: '  + data.role  + '\n\n' +
+      'Where have you led a group of teens?\n' + data.q1 + '\n\n' +
+      'What do you say to a teen unsure about Israel?\n' + data.q2 + '\n\n' +
+      'Can you make all five dates?\n' + data.q3 + '\n';
+
+    if(ENDPOINT){
+      status.style.display = 'block';
+      status.textContent = 'Sending\u2026';
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+        body: JSON.stringify(data)
+      }).then(function(r){
+        if(!r.ok) throw new Error('bad response');
+        form.reset();
+        status.textContent = 'Got it. We\u2019ll be in touch within a week.';
+      }).catch(function(){
+        status.textContent = 'That didn\u2019t go through. Email us at knowyourstorymn@gmail.com and we\u2019ll pick it up from there.';
+      });
+      return;
+    }
+
+    // Fallback: open a pre-filled email until the endpoint is configured.
+    window.location.href = 'mailto:knowyourstorymn@gmail.com'
+      + '?subject=' + encodeURIComponent('Know Your Story \u2014 ' + data.role + ' \u2014 ' + data.name)
+      + '&body=' + encodeURIComponent(body);
+    status.style.display = 'block';
+    status.textContent = 'Your email app should be opening. If it didn\u2019t, send the same info to knowyourstorymn@gmail.com.';
+  });
+})();
+</script>
+
+</body>
+</html>
