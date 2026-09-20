@@ -269,6 +269,33 @@ nav{
 .teen-board-body{font-size:15px;line-height:1.8;color:var(--muted)}
 .teen-board-cta{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
 .teen-board-cta span{font-size:12px;color:var(--muted)}
+.teen-board.educators{padding-top:0;margin-top:-52px}
+
+/* COMMUNITY PROGRAMS */
+.programs{padding:100px 48px;max-width:1100px;margin:0 auto}
+.programs-header{text-align:center;margin-bottom:56px}
+.programs-label{font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.programs-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,64px);line-height:1;color:var(--white)}
+.programs-sub{font-size:16px;color:var(--muted);margin:16px auto 0;max-width:58ch;line-height:1.7}
+.programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.program-card{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:14px;transition:border-color 0.2s,transform 0.2s}
+.program-card:hover{border-color:var(--blue);transform:translateY(-2px)}
+.program-head{display:flex;gap:14px;align-items:flex-start;min-height:64px}
+.program-icon{width:44px;height:44px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:rgba(31,107,255,0.12);color:var(--blue)}
+.program-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.program-ages{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.program-name{font-size:17px;font-weight:600;color:var(--white);line-height:1.3}
+.program-desc{font-size:14px;line-height:1.7;color:var(--muted)}
+.program-meta{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted);line-height:1.5;margin-top:auto;padding-top:14px;border-top:1px solid var(--hair)}
+.program-meta b{font-weight:600;color:var(--white);margin-right:6px}
+.program-link{align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--blue);text-decoration:none;display:inline-flex;gap:8px;align-items:center;padding:6px 0}
+.program-link span{transition:transform 0.2s}
+.program-link:hover span{transform:translate(2px,-2px)}
+.programs-note{text-align:center;font-size:13px;color:var(--muted);margin-top:36px}
+.programs-note a{color:var(--blue);text-decoration:none}
+@media(max-width:960px){.programs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.programs{padding-left:24px;padding-right:24px}.programs-grid{grid-template-columns:1fr}}
+
 .faq{background:var(--dark2);padding:100px 48px}
 .faq-inner{max-width:900px;margin:0 auto}
 .faq-label{font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
@@ -463,6 +490,8 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
     <a href="#about">About</a>
     <a href="#program">Program</a>
     <a href="#team">Team</a>
+    <a href="educators.html">Educators</a>
+    <a href="#programs">Community</a>
     <a href="#faq">FAQ</a>
     <a href="https://secure.lglforms.com/form_engine/s/3s6Znu-qNkruyOYZ1awtBg" target="_blank" rel="noopener">Donate</a>
     <a href="#join" class="nav-cta">Join the Effort</a>
@@ -564,18 +593,18 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
         <div class="session-bar"></div>
         <div class="session-num">01</div>
         <p class="session-date">December 6, 2026 — Launch</p>
-        <p class="session-title">The Timeline</p>
-        <p class="session-curric">Antisemitism Through the Ages</p>
-        <p class="session-body">Teens trace the history of antisemitism from the ancient world to today, tracking how longstanding myths and stereotypes have adapted across eras — building the tools to recognize antisemitism in all its forms and respond with confidence.</p>
+        <p class="session-title">Origin Story</p>
+        <p class="session-curric">Tracing Jewish Identity Through Immigration</p>
+        <p class="session-body">Every Jewish family has a unique story. Through guided discussion and personal reflection, teens explore how migration, identity, and resilience have shaped Jewish communities worldwide — and how their own family's story connects to a shared heritage.</p>
         <p class="session-reg">Register on Luma <span>&rarr;</span></p>
       </a>
       <a class="session" href="https://luma.com/1luqmy9b" target="_blank" rel="noopener">
         <div class="session-bar"></div>
         <div class="session-num">02</div>
         <p class="session-date">February 7, 2027 — Session 2</p>
-        <p class="session-title">Origin Story</p>
-        <p class="session-curric">Tracing Jewish Identity Through Immigration</p>
-        <p class="session-body">Every Jewish family has a unique story. Through guided discussion and personal reflection, teens explore how migration, identity, and resilience have shaped Jewish communities worldwide — and how their own family's story connects to a shared heritage.</p>
+        <p class="session-title">The Timeline</p>
+        <p class="session-curric">Antisemitism Through the Ages</p>
+        <p class="session-body">Teens trace the history of antisemitism from the ancient world to today, tracking how longstanding myths and stereotypes have adapted across eras — building the tools to recognize antisemitism in all its forms and respond with confidence.</p>
         <p class="session-reg">Register on Luma <span>&rarr;</span></p>
       </a>
       <a class="session" href="https://luma.com/npxsfqmr" target="_blank" rel="noopener">
@@ -626,7 +655,7 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
     </div>
     <div class="faq-item">
       <p class="faq-q">What's the time commitment?</p>
-      <p class="faq-a">Three 90-minute sessions across the 2026–2027 school year — plus time for pizza and a giveaway drawing!</p>
+      <p class="faq-a">Three two-hour Sunday sessions across the 2026–2027 school year — plus time for pizza and a giveaway drawing!</p>
     </div>
     <div class="faq-item">
       <p class="faq-q">Does my teen need a Jewish education background?</p>
@@ -704,6 +733,21 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
   </div>
 </section>
 
+<!-- EDUCATORS -->
+<section id="educators" class="teen-board educators">
+  <div class="teen-board-inner">
+    <div>
+      <p class="teen-board-label">Now Hiring · Paid Roles</p>
+      <h2 class="teen-board-headline">Lead a group.</h2>
+      <p class="teen-board-body">After each session, teens break into grade-level groups to talk through what they just learned. We're hiring four experienced Jewish educators to facilitate those conversations and four college-age mentors to join them — three Sundays, two trainings with StandWithUs, $1,000 or $550 for the year.</p>
+    </div>
+    <div class="teen-board-cta">
+      <a href="educators.html" class="btn-primary">Apply to Lead a Group</a>
+      <span>Group facilitators and college-age mentors. Apply by Monday, October 5.</span>
+    </div>
+  </div>
+</section>
+
 <!-- PARTNERS -->
 <section class="partners">
   <div class="partners-inner">
@@ -715,6 +759,72 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
       <span class="partner-pill">+ more partners joining soon</span>
     </div>
   </div>
+</section>
+
+<!-- COMMUNITY PROGRAMS -->
+<section id="programs" class="programs">
+  <div class="programs-header">
+    <p class="programs-label">Around the Community</p>
+    <h2 class="programs-headline">Other great programs<br/>in the Twin Cities.</h2>
+    <p class="programs-sub">Know Your Story is one piece of a vibrant community of organizations helping Jewish teens build identity, connection, and pride. Here are some other incredible programs worth exploring.</p>
+  </div>
+  <div class="programs-grid">
+    <div class="program-card">
+      <div class="program-head">
+        <div class="program-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15v4M17 17h4"/></svg></div>
+        <div><p class="program-ages">Ages 10–15</p><h3 class="program-name">Roots, Rituals &amp; Me</h3></div>
+      </div>
+      <p class="program-desc">An engaging, hands-on exploratory class where Jewish tweens and teens learn through conversation, creativity, and experience.</p>
+      <div class="program-meta"><p><b>Org</b>Inspire Academics</p><p><b>When</b>Weekly Tuesdays, 6–7 PM</p></div>
+      <a href="https://inspireacademics.org/roots-rituals-and-me" target="_blank" rel="noopener" class="program-link">Explore <span>&nearr;</span></a>
+    </div>
+    <div class="program-card">
+      <div class="program-head">
+        <div class="program-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6"/><path d="M18 14.3c1.8.9 3 2.9 3 5.7"/></svg></div>
+        <div><p class="program-ages">Grades 6–12</p><h3 class="program-name">Minneapolis NCSY &amp; JSU</h3></div>
+      </div>
+      <p class="program-desc">Public school clubs and programming connecting Jewish teens to their identity, Israel advocacy, and Jewish education.</p>
+      <div class="program-meta"><p><b>Org</b>NCSY</p><p><b>Where</b>7+ public high schools</p></div>
+      <a href="https://www.instagram.com/jsu.twincities/" target="_blank" rel="noopener" class="program-link">Connect <span>&nearr;</span></a>
+    </div>
+    <div class="program-card">
+      <div class="program-head">
+        <div class="program-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 2.5 4 4 4 7.5a4 4 0 0 1-8 0c0-1.5.7-2.5 1.5-3.3.3 1.2 1 1.8 1.5 1.8C11 7 11 5 12 3z"/><path d="M4 21l16-4M4 17l16 4"/></svg></div>
+        <div><p class="program-ages">Grades 6–12</p><h3 class="program-name">BBYO – North Star Council</h3></div>
+      </div>
+      <p class="program-desc">A teen-led national movement offering meaningful Jewish experiences, leadership development, and community.</p>
+      <div class="program-meta"><p><b>Org</b>B'nai B'rith Youth Organization</p><p><b>Travel</b>International summer programs</p></div>
+      <a href="https://bbyo.org/bbyo-near-you/regions/mid-america-region-north-star-council" target="_blank" rel="noopener" class="program-link">Join <span>&nearr;</span></a>
+    </div>
+    <div class="program-card">
+      <div class="program-head">
+        <div class="program-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg></div>
+        <div><p class="program-ages">Grades 9–12</p><h3 class="program-name">USY – Minnesota Chapters</h3></div>
+      </div>
+      <p class="program-desc">A national youth movement connecting Jewish teens through social, educational, and spiritual programs.</p>
+      <div class="program-meta"><p><b>Org</b>United Synagogue Youth</p><p><b>Founded</b>Minneapolis, 1948!</p></div>
+      <a href="https://www.usy.org/" target="_blank" rel="noopener" class="program-link">Learn more <span>&nearr;</span></a>
+    </div>
+    <div class="program-card">
+      <div class="program-head">
+        <div class="program-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v7a8 8 0 0 1-16 0z"/><path d="M8 9h2M14 9h2"/><path d="M9 14c1.8 1.5 4.2 1.5 6 0"/></svg></div>
+        <div><p class="program-ages">Grade 6</p><h3 class="program-name">Stories from Then. Voices of Now</h3></div>
+      </div>
+      <p class="program-desc">A theatre-based learning residency that brings Jewish history to life through creative storytelling and exploration.</p>
+      <div class="program-meta"><p><b>Orgs</b>JHSUM + Temple Israel</p><p><b>Format</b>3-hour residency</p></div>
+      <a href="https://www.jhsum.org/stories-from-then-voices-from-now" target="_blank" rel="noopener" class="program-link">Learn more <span>&nearr;</span></a>
+    </div>
+    <div class="program-card">
+      <div class="program-head">
+        <div class="program-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></div>
+        <div><p class="program-ages">Grades 11–12</p><h3 class="program-name">JCRC Youth Fellowship</h3></div>
+      </div>
+      <p class="program-desc">A competitive, prestigious fellowship for high schoolers to explore Jewish history and develop leadership skills.</p>
+      <div class="program-meta"><p><b>Org</b>Jewish Community Relations Council</p><p><b>Benefit</b>$1,000 stipend upon completion</p></div>
+      <a href="https://forms.cloud.microsoft/r/d1bM12ewcG" target="_blank" rel="noopener" class="program-link">Apply <span>&nearr;</span></a>
+    </div>
+  </div>
+  <p class="programs-note">Run a program for Twin Cities Jewish teens? <a href="mailto:knowyourstorymn@gmail.com">Tell us</a> and we'll add it.</p>
 </section>
 
 <!-- LOGO CONTEST TEASE -->
