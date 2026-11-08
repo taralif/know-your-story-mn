@@ -9,6 +9,7 @@
 <meta property="og:description" content="A teen space to explore Jewish identity, learn about Israel, and build confidence for real-world conversations. Grades 8–12 · Free pizza · Register for the series — starts Dec 6."/>
 <meta property="og:url" content="https://knowyourstorymn.org/"/>
 <meta property="og:type" content="website"/>
+<meta property="og:image" content="https://knowyourstorymn.org/images/hero-teens-1600.jpg"/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -57,8 +58,12 @@ html[data-theme="dark"] .theme-toggle-text::after{content:'Light'}
 .hero{padding:56px 0 48px;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(31,107,255,0.13),transparent 70%);pointer-events:none}
 .hero .wrap{position:relative}
+.hero:has(.hero-photo){padding-top:0}
+.hero-photo{position:relative;margin:0 0 36px;height:clamp(200px,26vw,320px);overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.hero-photo::after{content:'';position:absolute;inset:auto 0 0 0;height:38%;background:linear-gradient(to bottom,transparent,var(--ink));pointer-events:none}
 .hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,15vw,120px);line-height:0.9;letter-spacing:0.01em;margin-bottom:22px}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,15vw,100px);line-height:0.9;letter-spacing:0.01em;margin-bottom:22px}
 .hero h1 mark{background:#F5C842;color:#10203F;padding:0 0.12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 a.chip{color:inherit;text-decoration:none}a.chip:hover{border-color:var(--blue);color:var(--blue)}
 .hero h1 em{font-style:normal;color:var(--blue)}
@@ -161,6 +166,9 @@ document.documentElement.setAttribute('data-theme', t || ((window.matchMedia&&wi
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-photo">
+    <img src="images/hero-teens-1600.jpg" srcset="images/hero-teens-800.jpg 800w, images/hero-teens-1600.jpg 1600w" sizes="100vw" alt="Five teens laughing together around a table outdoors" width="1600" height="393" fetchpriority="high"/>
+  </div>
   <div class="wrap">
     <p class="hero-eyebrow">Know Your Story · New · Year One!</p>
     <h1>Your people.<br/>Your questions.<br/><mark>Your space.</mark></h1>
